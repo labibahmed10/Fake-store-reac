@@ -5,9 +5,10 @@ import "./Cards.css";
 const style = {
   textAlign: "center",
   margin: "20px 10px",
+  color: "navy",
 };
 
-const Cards = () => {
+const Cards = ({ func,number }) => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -18,10 +19,10 @@ const Cards = () => {
   return (
     <div>
       <h2 style={style}>ALL Products here</h2>
-      <div className="container">
+      <div>
         <div className="allcards">
           {products.map((product) => (
-            <SinglePiece data={product}></SinglePiece>
+            <SinglePiece number={number} func={func} data={product}></SinglePiece>
           ))}
         </div>
       </div>

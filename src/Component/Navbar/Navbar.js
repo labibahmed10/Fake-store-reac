@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ number }) => {
   return (
     <div>
       <header id="background" className="navbar">
@@ -23,7 +23,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/">
-              Cart
+              Cart {number}
             </a>
           </li>
         </ul>
