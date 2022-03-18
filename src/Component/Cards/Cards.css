@@ -1,0 +1,9 @@
+.allcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.backgrnd {
+  background-color: rgb(226, 205, 167);
+}

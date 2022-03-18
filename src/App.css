@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+ */
+
+/* .allcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+body {
+  background-color: bisque;
+}
+
+#background {
+  background-color: rgb(29, 29, 78);
+  color: antiquewhite;
+}
+
+#background a {
+  color: antiquewhite;
 }
